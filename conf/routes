@@ -11,6 +11,7 @@ POST    /scim/v2/Users              controllers.SCIM.createUser()
 PUT     /scim/v2/Users/:uid         controllers.SCIM.updateUser(uid:String)
 DELETE  /scim/v2/Users/:uid         controllers.SCIM.deleteUser(uid:String)
 GET     /scim/v2/Groups             controllers.SCIM.groups(count:Option[String], startIndex:Option[String])
+GET     /scim/v2/Groups/:gid        controllers.SCIM.group(gid:String)
 PATCH   /scim/v2/Groups/:gid        controllers.SCIM.patchGroup(gid:String)
 
 # Map static resources from the /public folder to the /assets URL path
